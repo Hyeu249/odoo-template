@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sheet_owner_rule" model="ir.rule">
+        <field name="name">Sheet owner rule</field>
+        <field name="model_id" ref="model_studio_sheet"/>
+        <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('studio.group_studio_subscriber'))]"/>
+    </record>
+
+</odoo>

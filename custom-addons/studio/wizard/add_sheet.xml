@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_studio_add_sheet_wiz_form" model="ir.ui.view">
+        <field name="name">studio.add_sheet.wiz.form</field>
+        <field name="model">studio.add.sheet.wiz</field>
+        <field name="arch" type="xml">
+            <form string="Add Sheet">
+                <group>
+                    <field name="name"/>
+                    <field name="description"/>
+                </group>
+
+                <footer>
+                    <button string="Submit" type="object" name="add_sheet" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_studio_add_sheet_wiz" model="ir.actions.act_window">
+        <field name="name">Add Sheet</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">studio.add.sheet.wiz</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_studio_add_sheet_wiz_form"/>
+        <field name="target">new</field>
+    </record>
+    
+    <menuitem id="menu_studio_add_sheet" name="Add Sheet" parent="menu_studio_root" action="action_studio_add_sheet_wiz" sequence="3"/>
+
+</odoo>
+ 

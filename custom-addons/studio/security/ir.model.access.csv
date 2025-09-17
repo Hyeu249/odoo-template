@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+studio.access_studio_sheet_for_admin,access_studio_sheet_for_admin,studio.model_studio_sheet,studio.group_studio_admin,1,1,1,1
+studio.access_studio_add_sheet_wiz_for_admin,access_studio_add_sheet_wiz_for_admin,studio.model_studio_add_sheet_wiz,studio.group_studio_admin,1,1,1,1
+
+studio.access_studio_sheet_for_subscriber,access_studio_sheet_for_subscriber,studio.model_studio_sheet,studio.group_studio_subscriber,1,1,1,0
+studio.access_studio_add_sheet_wiz_for_subscriber,access_studio_add_sheet_wiz_for_subscriber,studio.model_studio_add_sheet_wiz,studio.group_studio_subscriber,1,1,1,0

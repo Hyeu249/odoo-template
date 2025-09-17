@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="module_studio_role" model="ir.module.category">
+        <field name="name">Studio roles</field>
+        <field name="description">Studio roles</field>
+    </record>
+
+    <record id="group_studio_admin" model="res.groups">
+        <field name="name">Admin</field>
+        <field name="category_id" ref="module_studio_role"/>
+    </record>
+
+    <record id="group_studio_subscriber" model="res.groups">
+        <field name="name">Subscriber</field>
+        <field name="category_id" ref="module_studio_role"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_studio_root" name="Studio" sequence="2">
+        <menuitem id="menu_studio_settings" name="Settings" sequence="1" groups="studio.group_studio_admin"/>
+    </menuitem>
+
+    <menuitem id="base.menu_apps" name="Apps" parent="base.menu_management" sequence="5" groups="base.group_system"/>
+</odoo>
